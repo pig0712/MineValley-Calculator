@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#202a23">
+  <title>마인밸리 공방 · 제작·납품 계산기</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="seed.js"></script>
+  <script defer src="prices.js"></script>
+  <script defer src="icons.js"></script>
+  <script defer src="engine.js"></script>
+  <script defer src="machines.js"></script>
+  <script defer src="store.js"></script>
+  <script defer src="ui.js"></script>
+  <script defer src="craft.js"></script>
+  <script defer src="economy.js"></script>
+  <script defer src="equipment.js"></script>
+  <script defer src="settings.js"></script>
+  <script defer src="main.js"></script>
+</head>
+<body>
+  <a class="skip" href="#main">본문 바로가기</a>
+  <header id="topbar"></header>
+  <div class="workspace">
+    <section id="work-window" aria-labelledby="window-title">
+      <header id="window-bar"></header>
+      <main id="main" tabindex="-1"></main>
+    </section>
+    <section id="workshop-home" aria-labelledby="workshop-title" hidden></section>
+  </div>
+  <nav id="hotbar" aria-label="공방 단축바"></nav>
+  <dialog id="modal" aria-labelledby="dlg-title"><div id="dialog-body"></div></dialog>
+  <div id="toast" role="status" aria-live="polite"></div>
+  <noscript>계산기를 사용하려면 브라우저의 자바스크립트를 켜 주세요.</noscript>
+</body></html>
