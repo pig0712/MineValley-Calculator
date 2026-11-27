@@ -3,7 +3,7 @@ const assert=require("node:assert/strict");
 global.window=global;
 let stored=null;
 global.localStorage={getItem:()=>stored,setItem:(_,value)=>{stored=value;}};
-require("../seed.js");require("../prices.js");require("../engine.js");require("../machines.js");require("../store.js");
+require("../src/data/seed.js");require("../src/data/prices.js");require("../src/core/engine.js");require("../src/core/machines.js");require("../src/core/store.js");
 const E=global.MV,S=global.MVStore,s=S.initial(),map=E.catalog(s.items);
 let passed=0;
 function test(label,fn){fn();passed++;console.log("✓ "+label);}
